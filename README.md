@@ -1,2 +1,2 @@
 # qrcodeDemo
-使用zxing开源工具生成二维码
+使用zxing开源工具生成二维码  https://github.com/zxing/zxing
