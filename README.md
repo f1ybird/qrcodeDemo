@@ -55,7 +55,7 @@
 
 `生成二维码的路径为：【E:\Workspace\workspace-idea\qrcodeDemo\images\logoQR.png】`
 
-### 2. <table><tr><td bgcolor=orange> 读取二维码：java -cp qrcodeDemo.jar ReadQR</td></tr></table>
+2. <table><tr><td bgcolor=orange> 读取二维码：java -cp qrcodeDemo.jar ReadQR</td></tr></table>
 
 `请输入二维码的路径(如：E:\Workspace\workspace-idea\qrcodeDemo\images\logoQR.png)：`
 
