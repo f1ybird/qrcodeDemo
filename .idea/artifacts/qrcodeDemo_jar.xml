@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="qrcodeDemo:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/qrcodeDemo_jar</output-path>
+    <root id="archive" name="qrcodeDemo.jar">
+      <element id="module-output" name="qrcodeDemo" />
+      <element id="extracted-dir" path="E:/API/source/qrcode/core-3.3.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="E:/API/source/qrcode/javase-3.3.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

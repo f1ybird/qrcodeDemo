@@ -10,15 +10,17 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 /**
+ * 生成二维码
  * 使用https://github.com/zxing/zxing开源工具编码解码二维码
  *
  * @author kevin
  * @description:
  * @date 23:32 2018/1/16
  */
-public class ToQRImage {
+public class WriteQR {
 
     /**
      * 在二维码上根据容错机制添加logo logoQR.png
@@ -26,8 +28,20 @@ public class ToQRImage {
      * @throws Exception
      */
     public static void main(String[] args) throws Exception {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("温馨提示：【请将二维码中间的logo和存储路径设置成一致的！】");
+        System.out.println("-------------------------------------");
+        System.out.println("请输入二维码的存储路径(如：E:\\Workspace\\workspace-idea\\qrcodeDemo\\images)：");
+        String dir = scanner.next();;
+        System.out.print("请输入logo的名字(如：logo.jpg)：");
+        String logoName = scanner.next();
+        System.out.print("请输入生成二维码的名字(如：logoQR.png)：");
+        String qrName = scanner.next();
+        // contens字符串为二维码中的内容
+        System.out.print("请输入二维码的内容(如：测试)：");
+        String contents = scanner.next();
+
         MultiFormatWriter multiFormatWriter = new MultiFormatWriter();
-        String contents = "logo QR";
         int width = 200;
         int height = 200;
         Map<EncodeHintType, Object> hints = new HashMap<>();
@@ -48,7 +62,7 @@ public class ToQRImage {
         }
 
         // 读取logo
-        BufferedImage image = ImageIO.read(new File("E:\\Workspace\\workspace-idea\\qrcodeDemo\\images\\logo.jpg"));
+        BufferedImage image = ImageIO.read(new File(dir + File.separator + logoName));
 
         // 设置logo
         int logoH = 20;
@@ -61,7 +75,9 @@ public class ToQRImage {
         Graphics g = qr.getGraphics();
         g.drawImage(logo,x,y,null);
 
-        ImageIO.write(qr,"png",new File("E:\\Workspace\\workspace-idea\\qrcodeDemo\\images\\logoQR.png"));
+        ImageIO.write(qr,"png",new File(dir + File.separator + qrName));
+
+        System.out.println("生成二维码的路径为：【" + dir + File.separator + qrName + "】");
     }
 
     /**
