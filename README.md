@@ -35,7 +35,7 @@
 
 ### DOS窗口运行jar包
 
-`jar包路径：artifacts\qrcodeDemo.jar`
+`jar包路径：jar\qrcodeDemo.jar`
 
  <table><tr><td bgcolor=orange>1.生成二维码：java -jar qrcodeDemo.jar</td></tr></table>
 
