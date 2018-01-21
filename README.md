@@ -33,11 +33,11 @@
 
 读取的二维码的内容：测试
 
-# DOS窗口运行jar包
+### DOS窗口运行jar包
 
 `jar包路径：artifacts\qrcodeDemo.jar`
 
-`生成二维码：java -jar qrcodeDemo.jar`
+1. <table><tr><td bgcolor=orange>生成二维码：java -jar qrcodeDemo.jar</td></tr></table>
 
 `温馨提示：【请将二维码中间的logo和存储路径设置成一致的！】`
 
@@ -55,7 +55,7 @@
 
 `生成二维码的路径为：【E:\Workspace\workspace-idea\qrcodeDemo\images\logoQR.png】`
 
-`读取二维码：java -cp qrcodeDemo.jar ReadQR`
+### 2. <table><tr><td bgcolor=orange> 读取二维码：java -cp qrcodeDemo.jar ReadQR</td></tr></table>
 
 `请输入二维码的路径(如：E:\Workspace\workspace-idea\qrcodeDemo\images\logoQR.png)：`
 
