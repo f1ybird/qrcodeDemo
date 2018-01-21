@@ -6,7 +6,7 @@
 示例：
 
 温馨提示：【请将二维码中间的logo和存储路径设置成一致的！】
-######-------------------------------------
+-------------------------------------
 请输入二维码的存储路径(如：E:\Workspace\workspace-idea\qrcodeDemo\images)：
 E:\Workspace\workspace-idea\qrcodeDemo\images
 请输入logo的名字(如：logo.jpg)：logo.jpg
